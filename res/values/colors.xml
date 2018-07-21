@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#60303030</color>
+    <color name="list_background_pressed">#088A85</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="transparent">#00000000</color>
+    <color name="greydark">#ff585858</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="text_tab_selected">#ffffffff</color>
+    <color name="text_tab_unselected">#ff95ab45</color>
+    <color name="greencolor">#ffb9c510</color>
+    <color name="text_color">#ff383838</color>
+    <color name="canvas_border">#ffaaaaaa</color>
+    <color name="gradient_start">#ffffffff</color>
+    <color name="gradient_end">#ffeeeeee</color>
+    <color name="whiteBackground">#ffeeeeee</color>
+    <color name="margin_color">#ffbbbbbb</color>
+    <color name="title_color">#ff555555</color>
+    <color name="lightgray">#e7e7e7</color>
+    <color name="lightgray02">#bfbfbf</color>
+    <color name="orrange">#e33d1b</color>
+    <color name="black">#ff000000</color>
+    <color name="com_facebook_blue">#ff3b5998</color>
+    <color name="deemphasized_text">#ff666666</color>
+    <color name="actionbar_shape">#ff9e9c9c</color>
+    <color name="divider">#ffe4e4e4</color>
+
+
+</resources>

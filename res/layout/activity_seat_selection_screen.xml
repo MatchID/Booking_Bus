@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:id="@+id/busDeckSelectionMargin"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@+id/busDeckSelectionLayout"
+        android:background="#ffdddddd" />
+
+    <View
+        android:id="@+id/seatSelectionHeaderMargin"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@+id/busDeckSelectionMargin"
+        android:background="#ffdddddd" />
+
+    <RelativeLayout
+        android:id="@+id/seatLayoutScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomBarSeatSelection"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/scrollableLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/seatLegendLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/availableImageLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true" >
+
+                    <ImageView
+                        android:id="@+id/availableImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:rotation="90.0"
+                        android:src="@drawable/seat_layout_tab_nor_avl" />
+
+                    <TextView
+                        android:id="@+id/availableText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_toRightOf="@+id/availableImage"
+                        android:text="Kosong"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bookedImageLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/availableImageLayout" >
+
+                    <ImageView
+                        android:id="@+id/bookedImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:rotation="90.0"
+                        android:src="@drawable/seat_layout_tab_nor_bkd" />
+
+                    <TextView
+                        android:id="@+id/bookedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_toRightOf="@+id/bookedImage"
+                        android:text="Terisi"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/selectedImageLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bookedImageLayout" >
+
+                    <ImageView
+                        android:id="@+id/selectedImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:rotation="90.0"
+                        android:src="@drawable/seat_layout_tab_nor_std" />
+
+                    <TextView
+                        android:id="@+id/selectedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_toRightOf="@+id/selectedImage"
+                        android:text="Dipiih"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ladiesImageLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/availableImageLayout"
+                    android:layout_marginTop="5.0dip" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seatLayoutLowerMain"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/seatLegendLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10.0dip"
+                android:background="@layout/seat_layout_border"
+                android:paddingBottom="5.0dp"
+                android:paddingRight="5.0dp" >
+
+                <GridView
+                    android:id="@+id/gridView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/driver"
+                    android:layout_margin="4dp"
+                    android:columnWidth="100dp"
+                    android:gravity="center"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth" >
+                </GridView>
+
+                <RelativeLayout
+                    android:id="@+id/driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/gridView1"
+                    android:layout_marginRight="20.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:background="@drawable/steering_icon"
+                    android:orientation="horizontal" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seatLayoutUpper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seatLegendLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10.0dip"
+                android:background="@layout/seat_layout_border"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomBarSeatSelection"
+        android:layout_width="fill_parent"
+        android:layout_height="49.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="160.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1.0dip"
+            android:background="@drawable/selector_red_btn"
+            android:text="Lanjutkan"
+            android:textColor="#ffffff"
+            android:textSize="18.0sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/busDeckSelectionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="99dp" >
+
+        <RelativeLayout
+            android:id="@+id/busDeckSelectionButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#ffeeeeee" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

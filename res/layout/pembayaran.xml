@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="408dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="9dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Tujuan Transfer Pembayaran : " />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="50dip" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Pengirim :" />
+
+            <EditText
+                android:id="@+id/bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+              <TextView
+                android:id="@+id/textView21a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Rekening :" />
+
+              <EditText
+                  android:id="@+id/norek"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:ems="10" />
+
+              <TextView
+                android:id="@+id/textView21aa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berita :" />
+
+              <EditText
+                  android:id="@+id/berita"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:ems="10" >
+
+              </EditText>
+
+              <TextView
+                android:id="@+id/textView21aaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Transaksi :" />
+
+              <TextView
+                  android:id="@+id/textView3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Large Text"
+                  android:textAppearance="?android:attr/textAppearanceLarge" />
+
+              <ImageView
+                  android:id="@+id/imageView1"
+                  android:layout_width="match_parent"
+                  android:layout_height="70dp"
+                  android:src="@drawable/selector_red_btn" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/done"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_red_btn"
+            android:text="Konfirmasi Pembayaran" />
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/notr"
+            android:layout_width="2dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#D7DEF0"
+            android:textSize="0.5sp" />
+
+</LinearLayout>

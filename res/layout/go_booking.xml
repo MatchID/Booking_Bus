@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="408dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="9dip"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dari : " />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="50dip" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sampai :" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="50dip"  />
+
+              <TextView
+                android:id="@+id/textView21a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penumpang :" />
+
+            <Spinner
+                android:id="@+id/spinPenumpang"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="50dip"  />
+
+              <TextView
+                android:id="@+id/textView21aaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal :" />
+
+              <EditText
+                  android:id="@+id/Birthday"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:ems="10" >
+              </EditText>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_red_btn"
+            android:text="Cek Jadwal" />
+
+    </RelativeLayout>
+
+</LinearLayout>
